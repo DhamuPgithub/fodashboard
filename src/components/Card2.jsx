@@ -1,0 +1,35 @@
+import React from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import CardMedia from "@mui/material/CardMedia";
+
+export default function Card2({ label, price, vector1 }) {
+  return (
+    <Card
+      sx={{ marginTop: 2, paddingLeft: 1, paddingRight: 1, marginBottom: 2 }}
+    >
+      <CardContent
+        style={{
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <div style={{ flexGrow: 1 }}>
+          <Typography style={{ fontSize: "14px" }} component="div">
+            {label}
+          </Typography>
+          <Typography style={{ fontSize: "22px" }} component="div">
+            {price}
+          </Typography>
+        </div>
+        <CardMedia
+          component="img"
+          src={vector1}
+          alt="Description of the image"
+          style={{ width: 35, height: 35 }}
+        />
+      </CardContent>
+    </Card>
+  );
+}

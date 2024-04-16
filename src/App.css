@@ -1,0 +1,27 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+}
+
+/* Additional styles for the background color */
+body {
+  background-color: "#C0C0C0";
+}
+
+/* Adjustments for specific components */
+/* Add your specific component styles here */
+.zxdg2z {
+  padding: unset;
+}
